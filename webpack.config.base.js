@@ -7,6 +7,10 @@ export default {
       loaders: ['babel-loader'],
       exclude: /node_modules/
     }, {
+      test: /\.tsx?$/,
+      loader: 'ts-loader',
+      exclude: /node_modules/
+    }, {
       test: /\.json$/,
       loader: 'json-loader'
     }]
@@ -17,7 +21,7 @@ export default {
     libraryTarget: 'commonjs2'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json'],
+    extensions: ['', '.js', '.jsx', '.ts', '.tsx', '.json'],
     packageMains: ['webpack', 'browser', 'web', 'browserify', ['jam', 'main'], 'main']
   },
   plugins: [
