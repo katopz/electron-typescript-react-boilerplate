@@ -1,13 +1,22 @@
-import React from 'react';
+import * as React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, hashHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
+import { IStore } from 'redux';
 import routes from './routes';
-import configureStore from './store/configureStore';
+
+let configureStore:any;
+
+if (process.env.NODE_ENV === 'production') {
+  configureStore = require('./store/configureStore.production');
+} else {
+  configureStore = require('./store/configureStore.development');
+}
+
 import './app.global.css';
 
-const store = configureStore();
+const store: IStore<any> = configureStore();
 const history = syncHistoryWithStore(hashHistory, store);
 
 render(
