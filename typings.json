@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "lodash": "registry:npm/lodash#4.0.0+20160416211519",
+    "react-redux": "registry:npm/react-redux#4.4.0+20160614222153",
+    "react-router": "registry:npm/react-router#2.4.0+20160628165748",
+    "react-router-redux": "registry:npm/react-router-redux#4.0.0+20160602212457",
+    "redux": "registry:npm/redux#3.0.6+20160214194820",
+    "redux-thunk": "registry:npm/redux-thunk#2.0.0+20160525185520"
+  },
+  "globalDependencies": {
+    "classnames": "github:DefinitelyTyped/DefinitelyTyped/classnames/classnames.d.ts#ba257a9b91bc0de1bdd9091b6723194c905a902a",
+    "node": "registry:env/node#6.0.0+20160622202520",
+    "react": "registry:dt/react#0.14.0+20160621225615",
+    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040",
+    "redux-actions": "registry:dt/redux-actions#0.8.0+20160521154116"
+  }
+}
