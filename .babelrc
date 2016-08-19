@@ -18,5 +18,7 @@
         ["webpack-loaders", { "config": "webpack.config.node.js", "verbose": false }]
       ]
     }
-  }
+  },
+  "retainLines": true,
+  "sourceMaps": true
 }

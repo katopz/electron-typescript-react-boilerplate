@@ -46,6 +46,11 @@ $ npm run dev
 
 *Note: requires a node version >= 4 and an npm version >= 2.*
 
+## Run with [VSCode](https://code.visualstudio.com)
+- for `hot-server` try [debug](https://code.visualstudio.com/docs/customization/keybindings#_debug) by <kbd>F5</kbd>
+- for `start-hot` try `npm run start-hot` and use another `VSCode` attach to `electron` process. (but don't make a high hope for this)
+
+
 
 ## DevTools
 
